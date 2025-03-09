@@ -18,7 +18,6 @@
 # Исключить файлы документации
 docs/
 
-a.txt
 eslint.config.js 
 index.html 
 package-lock.json 
