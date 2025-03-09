@@ -1,0 +1,124 @@
+.my-image-slider {
+    position: relative;
+    max-width: 1000px;
+    margin: 120px auto 0;
+    padding: 0 55px;
+}
+
+.my-image-slider__wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 40%;
+}
+
+.my-image-slider__slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 102px;
+    font-weight: 900;
+    color: #232323;
+    background: #4b5659;
+    transition: transform 1s ease-in-out;
+}
+
+.my-image-slider__slide span {
+    z-index: 10;
+    line-height: 1;
+}
+
+.my-image-slider__slide::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    background: linear-gradient(90deg, #87de1d, #b4e900) !important;
+
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out 1s;
+}
+
+.my-image-slider__slide--active::after {
+    opacity: 1;
+}
+
+.my-image-slider__arrow {
+    position: absolute;
+    right: 5px;
+    top: 45%;
+    z-index: 20;
+    width: 44px;
+    height: 44px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 22px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: background-color 0.15s ease-out;
+}
+
+.my-image-slider__arrow:hover {
+    background-color: #333333;
+}
+
+.my-image-slider__arrow--prev {
+    left: 7px;
+    background-image: url(../public/image/arrow/arrow-prev.svg);
+}
+
+.my-image-slider__arrow--next {
+    right: 7px;
+    background-image: url(../public/image/arrow/arrow-next.svg);
+}
+
+.my-image-slider__dots {
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.my-image-slider__dot {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(107, 107, 107);
+    color: #ffffff;
+    transition: all 0.3s ease-in;
+}
+
+.my-image-slider__dot--active {
+    background-color: #b4e900;
+}
+
+@media (max-width: 1200px) {
+    .my-image-slider__slide {
+        font-size: 72px;
+        font-weight: 700;
+    }
+
+    .my-image-slider__dots {
+        bottom: -30px;
+
+        gap: 10px;
+    }
+
+    .my-image-slider__dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+@media (max-width: 720px) {
+    .my-image-slider__slide {
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
