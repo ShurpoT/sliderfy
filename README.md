@@ -1,5 +1,17 @@
 <div align="center">
 
+[![npm version](https://img.shields.io/npm/v/sliderfy.svg)](https://www.npmjs.com/package/sliderfy)
+[![Bundle size](https://img.shields.io/bundlephobia/minzip/sliderfy)](https://bundlephobia.com/result?p=sliderfy)
+[![BEM Methodology](https://img.shields.io/badge/Methodology-BEM-F2C94C)](https://en.bem.info/methodology/quick-start/)
+[![Downloads](https://img.shields.io/npm/dm/sliderfy.svg)](https://www.npmjs.com/package/sliderfy)
+[![License](https://img.shields.io/npm/l/sliderfy.svg)](https://opensource.org/licenses/MIT)
+
+<!-- [![GitHub stars](https://img.shields.io/github/stars/ShurpoT/sliderfy.svg?style=social&label=Stars)](https://github.com/ShurpoT/sliderfy) -->
+
+</div>
+
+<div align="center">
+
 ![Sliderfy Preview](https://github.com/ShurpoT/sliderfy/blob/main/images/logos/sliderfy-bgc.png?raw=true)
 
 </div>
