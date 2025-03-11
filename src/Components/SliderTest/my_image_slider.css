@@ -67,12 +67,12 @@
 
 .my-image-slider__arrow--prev {
     left: 7px;
-    background-image: url(../public/image/arrow/arrow-prev.svg);
+    background-image: url(../public/images/arrow/arrow-prev.svg);
 }
 
 .my-image-slider__arrow--next {
     right: 7px;
-    background-image: url(../public/image/arrow/arrow-next.svg);
+    background-image: url(../public/images/arrow/arrow-next.svg);
 }
 
 .my-image-slider__dots {

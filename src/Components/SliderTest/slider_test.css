@@ -82,13 +82,11 @@
 }
 
 .slider-test__arrow--prev {
-    background-image: url(../public/image/arrow/arrow-prev.svg);
-    transform: rotateZ(90deg);
+    background-image: url(../public/images/arrow/arrow-prev.svg);
     transform: translateY(-130%) rotateZ(90deg);
 }
 .slider-test__arrow--next {
-    background-image: url(../public/image/arrow/arrow-next.svg);
-    transform: rotateZ(90deg);
+    background-image: url(../public/images/arrow/arrow-next.svg);
     transform: translateY(30%) rotateZ(90deg);
 }
 
