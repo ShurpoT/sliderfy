@@ -26,6 +26,8 @@
 
 A lightweight, simple, and customizable React slider.
 
+[![NPM](https://nodei.co/npm/sliderfy.png?downloads=true)](https://nodei.co/npm/sliderfy/)
+
 </div>
 <br/>
 <br/>
