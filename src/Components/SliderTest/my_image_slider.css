@@ -2,27 +2,45 @@
     position: relative;
     max-width: 1000px;
     margin: 120px auto 0;
-    padding: 0 55px;
+    /* padding: 0 55px; */
+    height: 300px;
+    overflow: hidden;
+    /* border: 2px solid red; */
 }
 
 .my-image-slider__wrapper {
     position: relative;
-    width: 100%;
-    overflow: hidden;
-    padding-top: 40%;
+    display: flex;
+    justify-content: center;
+    /* width: 100%; */
+    height: 100%;
+    /* нельзя ставить низкий z-index --> не будет работать свайп */
+    /* z-index: -10; */
+    /* overflow: hidden; */
+    /* padding-top: 40%; */
+    transition-property: transform;
+    /* box-sizing: content-box; */
 }
 
 .my-image-slider__slide {
-    position: absolute;
-    inset: 0;
+    position: relative;
+    user-select: none;
+    /* position: absolute; */
+    /* inset: 0; */
+
+    /* width: 100%; */
+    /* height: 100%; */
+
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     align-items: center;
+
     font-size: 102px;
     font-weight: 900;
     color: #232323;
     background: #4b5659;
-    transition: transform 1s ease-in-out;
+    /* transition: all 1s ease-in-out; */
 }
 
 .my-image-slider__slide span {
@@ -41,6 +59,9 @@
     transition: opacity 0.4s ease-in-out 1s;
 }
 
+.my-image-slider__slide--active {
+    /* border: 1px solid greenyellow; */
+}
 .my-image-slider__slide--active::after {
     opacity: 1;
 }
@@ -80,7 +101,7 @@
     left: 50%;
     bottom: -40px;
     transform: translateX(-50%);
-    z-index: 2;
+    z-index: 22;
     display: flex;
     /* flex-direction: column; */
     justify-content: space-between;
