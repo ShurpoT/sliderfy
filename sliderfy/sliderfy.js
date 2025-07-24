@@ -87,8 +87,7 @@ const Sliderfy = ({
     "div",
     {
       className: `sliderfy__arrow sliderfy__arrow--${direction} ${sliderfyClassName}__arrow ${sliderfyClassName}__arrow--${direction}`,
-      onClick: () => changeSlide(i ? 1 : -1),
-      children: direction
+      onClick: () => changeSlide(i ? 1 : -1)
     },
     direction
   ));
