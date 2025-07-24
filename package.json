@@ -1,7 +1,7 @@
 {
     "name": "sliderfy",
     "private": false,
-    "version": "0.0.2",
+    "version": "0.0.3",
     "type": "module",
     "main": "sliderfy/sliderfy.cjs.js",
     "module": "sliderfy/sliderfy.js",
