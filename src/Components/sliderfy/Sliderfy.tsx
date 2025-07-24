@@ -141,9 +141,7 @@ const Sliderfy = ({
             <div
                 key={direction}
                 className={`sliderfy__arrow sliderfy__arrow--${direction} ${sliderfyClassName}__arrow ${sliderfyClassName}__arrow--${direction}`}
-                onClick={() => changeSlide(i ? 1 : -1)}>
-                {direction}
-            </div>
+                onClick={() => changeSlide(i ? 1 : -1)}></div>
         ));
 
     useEffect(() => {
